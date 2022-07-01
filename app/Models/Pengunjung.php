@@ -9,7 +9,7 @@ class Pengunjung extends Model
     protected $table            = 'pengunjung';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['name','nim','no_hp','prodi'];
+    protected $allowedFields    = ['name','nim','no_hp','prodi','Jam'];
 
 
 }

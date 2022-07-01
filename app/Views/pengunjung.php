@@ -40,6 +40,7 @@
                             <th>NO HP</th>
                             <th>DOMISILI</th>
                             <th>Action</th>
+                            <th>Jam</th>
                             <th>Hadir</th>
                         </tr>
                     </thead>
@@ -57,6 +58,8 @@
                                 </button>
                                 <a href="<?= base_url('pengunjung/delete/'.$pengunjung['id']) ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">Delete</a>
                             </td>
+                            <td><?= $pengunjung['Jam'] ?></td>
+
                             <td><input type="checkbox"></td>
                         </tr>
 
@@ -67,7 +70,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Data Pengunjung Lab. PRITA</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Data Pengunjung Mades Restaurant</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -76,20 +79,24 @@
                 <?= csrf_field(); ?>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="name">Nama Edit</label>
-                        <input type="text" name="nama" class="form-control" id="nama" value="<?= $pengunjung['name'] ?>" placeholder="Nama Mahasiswa" required>
+                        <label for="name">Edit Nama</label>
+                        <input type="text" name="nama" class="form-control" id="nama" value="<?= $pengunjung['name'] ?>" placeholder="Nama Lengkap" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">NIM </label>
-                        <input type="nim" name="nim" class="form-control" id="nim" value="<?= $pengunjung['nim'] ?>"  placeholder="Masukan NIM Mahasiswa" required>
+                        <label for="email">NIK </label>
+                        <input type="nim" name="nim" class="form-control" id="nim" value="<?= $pengunjung['nim'] ?>"  placeholder="Masukan NIK" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Nomor HP</label>
-                        <input type="text" name="no_hp" class="form-control" id="no_hp" value="<?= $pengunjung['no_hp'] ?>"  placeholder="Nomor HP Mahasiswa" required>
+                        <label for="phone">No HP</label>
+                        <input type="text" name="no_hp" class="form-control" id="no_hp" value="<?= $pengunjung['no_hp'] ?>"  placeholder="Nomor HP" required>
                     </div>
                     <div class="form-group">
-                        <label for="address">Prodi</label>
-                        <input type="text" name="prodi" class="form-control" id="prodi" value="<?= $pengunjung['prodi'] ?>"  placeholder="Program Studi" required>
+                        <label for="address">DOMISILI</label>
+                        <input type="text" name="prodi" class="form-control" id="prodi" value="<?= $pengunjung['prodi'] ?>"  placeholder="DOMISILI" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Jam</label>
+                        <input type="text" name="Jam" class="form-control" id="Jam" value="<?= $pengunjung['Jam'] ?>"  placeholder="Jam" required>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -133,6 +140,10 @@
                     <div class="form-group">
                         <label for="phone">NO HP</label>
                         <input type="text" name="no_hp" class="form-control" id="no_hp" placeholder="Masukan Nomor HP" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Jam</label>
+                        <input type="text" name="Jam" class="form-control" id="Jam" placeholder="Jam Booking" required>
                     </div>
                 </div>
                 <div class="modal-footer">

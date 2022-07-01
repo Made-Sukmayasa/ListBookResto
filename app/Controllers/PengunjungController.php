@@ -28,7 +28,7 @@ class PengunjungController extends BaseController
         'nim' => $this->request->getPost('nim'),
         'no_hp' => $this->request->getPost('no_hp'),
         'prodi' => $this->request->getPost('prodi'),
-
+        'Jam' => $this->request->getPost('Jam'),
             ]);
        return redirect('/')->with('Selamat','Data Berhasil di input');
     }
@@ -42,6 +42,8 @@ class PengunjungController extends BaseController
                 'nim' => $this->request->getPost('nim'),
                 'no_hp' => $this->request->getPost('no_hp'),
                 'prodi' => $this->request->getPost('prodi'),
+                'Jam' => $this->request->getPost('Jam'),
+
             ]);
 
             return redirect('/')->with('success', 'Data Berhasil diperbarui!');

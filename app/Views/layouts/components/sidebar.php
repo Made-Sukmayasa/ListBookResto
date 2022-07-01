@@ -12,7 +12,7 @@
     <li class="nav-item active">
         <a class="nav-link" href="pengunjung.php">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard Admin</span></a>
+        <span>Dashboard Booking List</span></a>
     </li>
     <!-- Divider -->
     <hr class="sidebar-divider">
