@@ -40,6 +40,7 @@
                             <th>NO HP</th>
                             <th>DOMISILI</th>
                             <th>Action</th>
+                            <th>Hadir</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -56,6 +57,7 @@
                                 </button>
                                 <a href="<?= base_url('pengunjung/delete/'.$pengunjung['id']) ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">Delete</a>
                             </td>
+                            <td><input type="checkbox"></td>
                         </tr>
 
                         
